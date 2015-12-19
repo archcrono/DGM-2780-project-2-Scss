@@ -1,0 +1,64 @@
+.clear {
+		clear: both;
+	}
+body{
+	font-family: $font-stack;
+}
+h1{
+	font-weight: 700;
+	font-size: 30px;
+	}
+h2{
+	font-weight: 700;
+	font-size: 20px;
+	color: $tri;
+}
+a{
+	padding: 4px;
+	margin-top: 5px;
+	color: $secondary;
+}
+.l{
+	border-left: 1px solid $secondary;
+}
+.active{
+	background-color: $secondary;
+	color:$primary;
+}
+.respond {
+		width: 100%;
+		margin: auto;
+		max-width: 940px;
+		min-width: 300px;
+	}
+
+#home-page 
+{
+	h1{
+		color:$primary;
+	}
+	h2{
+		margin-bottom: 8px;
+	}
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+.col{
+	float: left;
+	margin: 10px;	
+}
+.img{
+	@extend .col;
+	border: 1px solid $primary;
+	@include border-radius(20px);
+	margin-left: 21px;
+}
+.columns{
+	@extend .col;
+	max-width: 940px/2-20px;
+}

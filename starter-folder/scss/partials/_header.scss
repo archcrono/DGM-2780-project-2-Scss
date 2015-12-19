@@ -1,0 +1,15 @@
+// Header SCSS
+
+#header {
+	padding: 8px;
+	background-color: $primary;
+	color: $secondary;
+
+    nav {
+    	float: right;
+
+    	li {
+    		float: left;
+    	}	
+	}
+}// #header
